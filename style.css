@@ -147,4 +147,78 @@ button {
 button:hover {
     background-color: #005fa3;
 }
+.hero {
+    background: linear-gradient(135deg, #0077cc, #00aaff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #0077cc;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #e6f3ff;
+}
+.goals-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+
+    /* Stack your two boxes vertically */
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Make each box full width */
+    .box {
+        width: 100%;
+    }
+
+    /* Make the hero text smaller */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Make nav links wrap nicely */
+    nav a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    /* Make images scale instead of overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
